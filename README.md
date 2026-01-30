@@ -1,50 +1,136 @@
-# Welcome to your Expo app 👋
+# 🧩 Pokédex (React Native + Expo Router)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple, clean **Pokédex app** built with **React Native**, **Expo**, and the **PokéAPI**.  
+Browse Pokémon, tap one to see detailed stats, types, abilities, and more.
 
-## Get started
+This project focuses on **clear structure**, **good TypeScript habits**, and **scalable styling** — without over-engineering.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## ✨ Features
 
-2. Start the app
+- 📜 Pokémon list fetched from PokéAPI
+- 🔍 Pokémon details screen (name, types, sprites, height, weight, abilities, stats)
+- 🎨 Type-based color theming
+- 📱 Mobile-first UI
+- 🧠 Clean separation of:
+  - screens
+  - shared types
+  - shared styles
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🛠 Tech Stack
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- React Native
+- Expo
+- Expo Router
+- TypeScript
+- PokéAPI (https://pokeapi.co)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 📂 Project Structure
 
-When you're ready, run:
+app/
+index.tsx # Pokémon list screen
+details.tsx # Pokémon details screen
+
+types/
+pokemon.ts # Shared Pokémon interfaces
+
+styles/
+colors.ts # Pokémon type colors
+typography.ts # Shared text styles
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repo
 
 ```bash
-npm run reset-project
+git clone https://github.com/your-username/pokedex.git
+cd pokedex
+
+
+### 2️⃣ Install dependencies
+npm install
+
+
+or
+
+yarn
+
+### 3️⃣ Start the app
+npx expo start
+
+Then open it in:
+
+Expo Go (mobile)
+
+Android emulator
+
+iOS simulator
+
+Web
+
+## 🔌 API Used
+
+All Pokémon data comes from:
+
+PokéAPI
+https://pokeapi.co/api/v2/pokemon
+
+No authentication required.
+
+## 🎨 Styling Approach
+
+Uses React Native StyleSheet
+
+Shared styles live in app/styles
+
+Screen-specific styles stay inside screens
+
+Pokémon types are mapped to colors via colorsByType
+
+Example:
+
+colorsByType.fire // "#EE8130"
+
+## 🧠 Design Decisions
+
+No global state — local state is enough
+
+No UI libraries — focuses on core React Native
+
+Simple abstractions only when needed
+
+Expo Router for file-based navigation
+
+🧪 Future Improvements
+
+🔎 Search Pokémon by name
+
+⭐ Favorites
+
+🌙 Dark mode
+
+🎭 Reusable components (TypeChip, StatBar)
+
+📊 More Pokémon data (moves, evolution chains)
+
+## 📸 Screenshots
+
+
+## 📜 License
+
+MIT License
+Feel free to use, modify, and learn from this project.
+
+## 🙌 Acknowledgements
+
+PokéAPI for the incredible free API
+
+Pokémon © Nintendo / Game Freak
 ```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
