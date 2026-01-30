@@ -49,20 +49,21 @@ typography.ts # Shared text styles
 
 ### 1️⃣ Clone the repo
 
-```bash
 git clone https://github.com/your-username/pokedex.git
 cd pokedex
 
-
 ### 2️⃣ Install dependencies
-npm install
 
+npm install
 
 or
 
 yarn
 
+---
+
 ### 3️⃣ Start the app
+
 npx expo start
 
 Then open it in:
@@ -75,6 +76,8 @@ iOS simulator
 
 Web
 
+---
+
 ## 🔌 API Used
 
 All Pokémon data comes from:
@@ -83,6 +86,8 @@ PokéAPI
 https://pokeapi.co/api/v2/pokemon
 
 No authentication required.
+
+---
 
 ## 🎨 Styling Approach
 
@@ -97,6 +102,8 @@ Pokémon types are mapped to colors via colorsByType
 Example:
 
 colorsByType.fire // "#EE8130"
+
+---
 
 ## 🧠 Design Decisions
 
@@ -120,17 +127,23 @@ Expo Router for file-based navigation
 
 📊 More Pokémon data (moves, evolution chains)
 
+---
+
 ## 📸 Screenshots
 
+---
 
 ## 📜 License
 
 MIT License
 Feel free to use, modify, and learn from this project.
 
+---
+
 ## 🙌 Acknowledgements
 
 PokéAPI for the incredible free API
 
 Pokémon © Nintendo / Game Freak
-```
+
+---
